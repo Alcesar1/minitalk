@@ -28,8 +28,8 @@ $(SERVER): $(SERVER_OBJ) $(LIBFT)
 $(CLIENT): $(CLIENT_OBJ) $(LIBFT)
 	$(CC) $(CFLAGS) $< $(LIBFT) -o $@
 
-//$(NAME): $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME)
+# //$(NAME): $(OBJS) $(LIBFT)
+# 	$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME)
 
 $(LIBFT):
 	$(MAKE) -C $(LIBFT_DIR)
